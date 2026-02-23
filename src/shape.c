@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h> // for malloc and free
 
-// Forward declaration of the private method
+// Private method: only accessible via the VTable
 static void shape_draw(void* obj) {
     Shape* self = (Shape*)obj;
     printf("[Shape] %s at (%d, %d)\n", self->name, self->x, self->y);
